@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1010678272133",
+    "firebase_url": "https://health-calculator-and-food-cal.firebaseio.com",
+    "project_id": "health-calculator-and-food-cal",
+    "storage_bucket": "health-calculator-and-food-cal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010678272133:android:c8f8e7440fa0adce",
+        "android_client_info": {
+          "package_name": "com.samarth.lightweight"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010678272133-bmimhmf5rtjoi0r5miejnoh38sus0a7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYXaGWYFm7S_TNOua2bG4liFDOxEJNYfo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

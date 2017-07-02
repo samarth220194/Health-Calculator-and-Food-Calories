@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/bmi"
+            android:icon="@drawable/scales"
+            android:title="Body Mass Index"
+            android:checkable="true"/>
+        <item
+            android:id="@+id/bfp"
+            android:icon="@drawable/percent"
+            android:title="Body Fat Percentage"
+            android:checkable="true"/>
+        <item
+            android:id="@+id/wth"
+            android:icon="@drawable/diet"
+            android:title="Waist-to-Height Ratio"
+            android:checkable="true"/>
+        <item
+            android:id="@+id/bmr"
+            android:icon="@drawable/pulse"
+            android:title="Basal Metabolic Rate"
+            android:checkable="true"/>
+        <item
+            android:id="@+id/calories_in_food"
+            android:icon="@drawable/calories"
+            android:title="Calories in Food"
+            android:checkable="true"/>
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/star"
+                android:title="Rate Us" />
+        </menu>
+    </item>
+
+</menu>

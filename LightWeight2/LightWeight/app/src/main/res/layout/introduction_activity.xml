@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/back_2">
+
+
+    <TextView
+        android:id="@+id/age_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How Old are you?"
+       android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/age_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/age_tv1"
+        android:hint="Please enter your age"
+        android:backgroundTint="@color/black"
+        android:textColorHint="@color/colorAccent"
+        android:focusable="true"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/gender_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Your Gender"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/age_tv"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+<RelativeLayout
+    android:id="@+id/rl_gender"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/gender_tv"
+    android:layout_marginTop="5dp">
+    <View
+        android:id="@+id/divider"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="#708090" />
+    <ImageView
+        android:id="@+id/male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/man_silhouette"
+        android:layout_toLeftOf="@id/divider"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="40dp"/>
+    <ImageView
+        android:id="@+id/female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/girl"
+        android:layout_toRightOf="@id/divider"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"/>
+
+
+</RelativeLayout>
+
+
+    <Button
+        android:text="Body Mass Index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rl_gender"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="BMI"
+        android:id="@+id/bmi" />
+    <Button
+        android:text="Body Fat Percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:layout_below="@id/bmi"
+        android:onClick="BFP"
+        android:layout_margin="5dp"
+        android:id="@+id/bfp" />
+    <Button
+        android:text="Waist-to-Height Ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:onClick="WTHR"
+       android:layout_below="@id/bfp"
+        android:id="@+id/wthr" />
+
+    <Button
+        android:text="Basal Metabolic Rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:onClick="BMR"
+        android:layout_below="@id/wthr"
+        android:id="@+id/bmr" />
+
+    <Button
+        android:text="Calories in Food Items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@id/bmr"
+        android:onClick="CALORIES"
+        android:background="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:id="@+id/calories" />
+
+</RelativeLayout>

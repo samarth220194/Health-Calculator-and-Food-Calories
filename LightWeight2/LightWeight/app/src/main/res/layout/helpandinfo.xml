@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.samarth.lightweight.helpandinfo"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/converter1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Length:"
+            style="@style/text_boxes" />
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:weightSum="5">
+
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:maxLength="10"
+                android:layout_weight="3"
+                style="@style/EditTextStyle"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/round"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp">
+                <Spinner
+                    android:id="@+id/height_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/SpinnerStyle"
+                    android:background="@drawable/spinner_back"/>
+            </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:weightSum="5">
+                <TextView
+                    android:id="@+id/height_result"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:maxLength="10"
+                    android:layout_weight="3"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    style="@style/EditTextStyle"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/round"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp">
+                    <Spinner
+                        android:id="@+id/height_spinner_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        style="@style/SpinnerStyle"
+                        android:background="@drawable/spinner_back"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/converter2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Mass:"
+            style="@style/text_boxes" />
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="1"
+                android:weightSum="5">
+
+                <EditText
+                    android:id="@+id/weight"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:maxLength="10"
+                    android:layout_weight="3"
+                    style="@style/EditTextStyle"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/round"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp">
+                    <Spinner
+                        android:id="@+id/weight_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        style="@style/SpinnerStyle"
+                        android:background="@drawable/spinner_back"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/weight_result"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:maxLength="10"
+                    android:layout_weight="3"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    style="@style/EditTextStyle"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/round"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp">
+                    <Spinner
+                        android:id="@+id/weight_spinner_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        style="@style/SpinnerStyle"
+                        android:background="@drawable/spinner_back"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is BMI (body mass index)?"
+            android:textSize="18sp"
+            style="@style/text_boxes"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/bmi_text"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/bfp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is BFP (body fat percentage)?"
+            android:textSize="18sp"
+            style="@style/text_boxes"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/bfp_text"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/bmr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is BMR (basal metabolic rate)?"
+            android:textSize="18sp"
+            style="@style/text_boxes"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/bmr_text"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/wth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is WHtR (waist-to-height-ratio)?"
+            android:textSize="18sp"
+            style="@style/text_boxes"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/wth_text"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_gravity="bottom"
+            ads:adSize="SMART_BANNER"
+            android:visibility="gone"
+            ads:adUnitId="@string/banner_home_footer">
+
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+</ScrollView>

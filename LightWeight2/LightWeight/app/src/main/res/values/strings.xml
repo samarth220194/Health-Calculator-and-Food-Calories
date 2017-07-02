@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Health Calculator &amp; Food Calories</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_home_footer">ca-app-pub-9147883601338456/9322254129</string>
+
+    <string name="weightLabel">Weight</string>
+    <string name="heightLabel">Height</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+
+    <string name="sharing_text" formatted="false">
+        Hi guys,Check out this new Health Calculator with tremendous features,It is amazing! https://play.google.com/store/apps/details?id=
+    </string>
+
+    <string-array name="height_spinner_array">
+        <item>ft + in</item>
+        <item>cm</item>
+
+    </string-array>
+
+    <string-array name="length_spinner_array">
+
+        <item>in</item>
+        <item>cm</item>
+        <item>ft</item>
+
+    </string-array>
+
+    <string-array name="waist_spinner_array">
+        <item>in</item>
+        <item>cm</item>
+    </string-array>
+
+    <string-array name="neck_spinner_array">
+        <item>in</item>
+        <item>cm</item>
+    </string-array>
+
+    <string-array name="hip_spinner_array">
+        <item>in</item>
+        <item>cm</item>
+    </string-array>
+
+    <string-array name="weight_spinner_array">
+        <item>kg</item>
+        <item>lb</item>
+    </string-array>
+
+    <string-array name="goal_spinner_array">
+        <item>Maintain current weight</item>
+        <item>Lose 0.5kg per week</item>
+        <item>Lose 1kg per week</item>
+        <item>Gain 0.5kg per week</item>
+        <item>Gain 1kg per week</item>
+    </string-array>
+
+    <string-array name="activity_spinner_array">
+        <item>Little to no exercise</item>
+        <item>Light exercise (1–3 days per week)</item>
+        <item>Moderate exercise (3–5 days per week)</item>
+        <item>Heavy exercise (6–7 days per week)</item>
+        <item>Very heavy exercise (twice per day)</item>
+    </string-array>
+    
+    <string name="bmi_text" formatted="false">Body mass index (BMI) is a measure of relative size based on the mass and height of an individual.The BMI is defined as the body mass divided by the square of the body height, and is universally expressed in units of kg/m2,resulting from mass in kilograms and height in metres.</string>
+    
+    <string name="bfp_text" formatted="false">"The body fat percentage (BFP) of a human or other living being is the total mass of fat divided by total body mass; body fat includes essential body fat and storage body fat.The percentage of essential fat is 2–5% in men, and 10–13% in women.The body fat percentage is a measure of fitness level,since it is the only body measurement which directly calculates a person's relative body composition without regard to height or weight."</string>
+
+    <string name="bmr_text" formatted="false">"Your BMR (Basal Metabolic Rate) is an estimate of how many calories you'd burn if you were to do nothing but rest for 24 hours. It represents the minimum amount of energy needed to keep your body functioning, including breathing and keeping your heart beating.Your BMR does not include the calories you burn from normal daily activities or exercise."</string>
+
+    <string name="wth_text" formatted="false">"A person's waist-to-height ratio (WHtR), also called waist-to-stature ratio (WSR),is defined as their waist circumference divided by their height, both measured in the same units.The WHtR is a measure of the distribution of body fat.Higher values of WHtR indicate higher risk of obesity-related cardiovascular diseases;it is correlated with abdominal obesity."</string>
+</resources>

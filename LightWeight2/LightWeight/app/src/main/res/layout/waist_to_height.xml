@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scroll_wth"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#FFFFFF">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_male"
+                android:layout_weight="1"
+                style="@style/text_boxes"/>
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radio_female"
+                style="@style/text_boxes"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Age:"
+            style="@style/text_boxes" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:maxLength="9"
+            android:inputType="number"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="12dp"
+            style="@style/EditTextStyle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="Waist:"
+                android:layout_weight="1.2"
+                style="@style/text_boxes" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="Height:"
+                android:layout_weight="1.8"
+                style="@style/text_boxes" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="1.2"
+                android:weightSum="1.2">
+                <EditText
+                    android:id="@+id/waist"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:maxLength="3"
+                    android:layout_weight="0.6"
+                    style="@style/EditTextStyle"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/round"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp">
+
+                    <Spinner
+                        android:id="@+id/waist_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        style="@style/SpinnerStyle"
+                        android:background="@drawable/spinner_back" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_weight="1.8"
+                android:weightSum="1.8"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="12dp">
+                <EditText
+                    android:id="@+id/height_ft"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:maxLength="3"
+                    android:layout_weight="0.6"
+                    android:hint="ft"
+                    android:textColorHint="#708090"
+                    style="@style/EditTextStyle"/>
+
+                <EditText
+                    android:id="@+id/height_in"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:maxLength="3"
+                    android:layout_marginLeft="2dp"
+                    android:hint="in"
+                    android:textColorHint="#708090"
+                    android:layout_weight="0.6"
+                    style="@style/EditTextStyle"/>
+                <EditText
+                    android:id="@+id/height_cm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:maxLength="3"
+                    android:visibility="gone"
+                    android:layout_weight="1.2"
+                    style="@style/EditTextStyle"/>
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/round">
+                    <Spinner
+                        android:id="@+id/height_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        style="@style/SpinnerStyle"
+                        android:background="@drawable/spinner_back"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_3"/>
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:textColor="#000000"
+                    android:text="Extremely Slim"/>
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:textColor="#000000" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+
+            <LinearLayout
+                android:id="@+id/linearlayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_4"/>
+
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Healthy Slim"
+                    android:layout_weight="7"/>
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="0.00-0.00"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+
+
+            <LinearLayout
+                android:id="@+id/linearlayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_5"/>
+
+
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Healthy"
+                    android:textColor="#000000"
+                    android:layout_weight="7"/>
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="0.00-0.00"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+
+            <LinearLayout
+                android:id="@+id/linearlayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_6"/>
+
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:textColor="#000000"
+                    android:text="Overweight"/>
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="0.00-0.00"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+            <LinearLayout
+                android:id="@+id/linearlayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_1"/>
+
+                <TextView
+                    android:id="@+id/t5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:textColor="#000000"
+                    android:text="Very Overweight"/>
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="0.00-0.00"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"/>
+
+            <LinearLayout
+                android:id="@+id/linearlayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_2"/>
+
+
+                <TextView
+                    android:id="@+id/t6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:textColor="#000000"
+                    android:text="Morbidly Obese"/>
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text=">=0.00"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_home_footer">
+
+    </com.google.android.gms.ads.AdView>
+
+
+
+</LinearLayout>
+
+</ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
